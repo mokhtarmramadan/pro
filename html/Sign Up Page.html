@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب - حرفي</title>
+    <link rel="stylesheet" href="../css/Sign Up Page.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card">
+            <h2>إنشاء حساب جديد</h2>
+            <form id="signup-form" action="../php/register.php" method="POST" class="auth-form">
+                <div class="form-group">
+                    <label for="username">اسم المستخدم</label>
+                    <input type="text" id="username" name="username" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني</label>
+                    <input type="email" id="email" name="email" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="password">كلمة المرور</label>
+                    <input type="password" id="password" name="password" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="location">الموقع (المدينة/المنطقة)</label>
+                    <input type="text" id="location" name="location" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="user-type">نوع الحساب</label>
+                    <select id="user-type" name="user-type" required class="form-control">
+                        <option value="1">مستخدم عادي</option>
+                        <option value="2">حرفي</option>
+                    </select>
+                </div>
+                <div class="form-group" id="profession-field" style="display:none;">
+                    <label for="profession">الحرفة:</label>
+                    <input type="text" id="profession" name="profession" class="form-control">
+                </div>
+                <button type="submit" class="btn-primary">إنشاء حساب</button>
+                <p class="auth-switch">لديك حساب بالفعل؟ <a href="../Login Page.html">تسجيل الدخول</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const userTypeSelect = document.getElementById('user-type');
+        const professionField = document.getElementById('profession-field');
+
+        userTypeSelect.addEventListener('change', function() {
+            if (this.value === 'professional') {
+                professionField.style.display = 'block';
+            } else {
+                professionField.style.display = 'none';
+            }
+        });
+
+        
+    </script>
+</body>
+</html>

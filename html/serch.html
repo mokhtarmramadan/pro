@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البحث عن الحرفيين</title>
+    <link rel="stylesheet" href="../css/serch.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container2">
+            <div class="logo">
+                <a href="home.html">شعار الموقع</a>
+            </div>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="Home Page.html">الرئيسية</a></li>
+                    <li><a href="serch.html">البحث عن حرفي</a></li>
+                    <li><a href="Booking Page.html">حجز خدمة</a></li>
+                    <li><a href="Reviews Page.html">التقييمات</a></li>
+                    <li><a href="Support Page.html">الدعم</a></li>
+                    <li><a href="Professional.html">الحساب الشخصي</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="search-section">
+        <div class="container">
+            <h1>البحث عن الحرفيين</h1>
+            <form action="../php/serch.php" method="GET" class="search-form">
+                <div class="form-group">
+                    <label for="profession">اختر تخصص:</label>
+                    <select id="profession" name="profession" class="form-control">
+                        <option value="">كل التخصصات</option>
+                        <option value="plumbing">سباكة</option>
+                        <option value="electrical">كهرباء</option>
+                        <option value="carpentry">نجارة</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="location">اختر المنطقة:</label>
+                    <input type="text" id="location" name="location" placeholder="أدخل المنطقة" class="form-control">
+                </div>
+                <button type="submit" class="search-btn">بحث</button>
+            </form>
+            
+            <section class="results-section">
+                <h2>النتائج:</h2>
+                <ul class="results-list">
+                    <li class="result-item">
+                        <h3>محمد علي - سباكة</h3>
+                        <p>المنطقة: الرياض</p>
+                        <p>تقييم: 4.5/5</p>
+                        <a href="#" class="more-info-btn">عرض المزيد</a>
+                    </li>
+                    <!-- مزيد من النتائج يمكن إضافتها هنا -->
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 جميع الحقوق محفوظة. تصميم وتطوير بواسطة فريقنا.</p>
+        </div>
+    </footer>
+</body>
+</html>

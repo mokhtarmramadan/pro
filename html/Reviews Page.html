@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة التقييمات</title>
+    <link rel="stylesheet" href="../css/Reviews Page.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container2">
+            <div class="logo">
+                <a href="home.html">شعار الموقع</a>
+            </div>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="Home Page.html">الرئيسية</a></li>
+                    <li><a href="serch.html">البحث عن حرفي</a></li>
+                    <li><a href="Booking Page.html">حجز خدمة</a></li>
+                    <li><a href="Reviews Page.html">التقييمات</a></li>
+                    <li><a href="Support Page.html">الدعم</a></li>
+                    <li><a href="Professional.html">الحساب الشخصي</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="reviews-section">
+        <div class="container">
+            <h1>تقييمات العملاء</h1>
+
+            <div class="filter-section">
+                <form action="#" method="GET" class="filter-form">
+                    <select name="craftsman" id="craftsman">
+                        <option value="">اختر الحرفي</option>
+                        <option value="craftsman1">حرفي 1</option>
+                        <option value="craftsman2">حرفي 2</option>
+                    </select>
+
+                    <select name="service" id="service">
+                        <option value="">اختر نوع الخدمة</option>
+                        <option value="plumbing">سباكة</option>
+                        <option value="electricity">كهرباء</option>
+                    </select>
+
+                    <button type="submit" class="filter-btn">تصفية</button>
+                </form>
+            </div>
+
+            <div class="reviews-list">
+                <div class="review-item">
+                    <h3>محمد علي - سباكة</h3>
+                    <div class="rating">
+                        <span>★★★★★</span>
+                        <span>4.5/5</span>
+                    </div>
+                    <p>خدمة ممتازة واحترافية، أوصي بالتعامل معه.</p>
+                </div>
+
+                <div class="review-item">
+                    <h3>أحمد سعيد - كهرباء</h3>
+                    <div class="rating">
+                        <span>★★★★☆</span>
+                        <span>4.0/5</span>
+                    </div>
+                    <p>عمل جيد ولكن كان هناك بعض التأخير في الموعد.</p>
+                </div>
+
+                <!-- يمكنك إضافة المزيد من التقييمات هنا -->
+            </div>
+
+            <div class="add-review">
+                <h2>إضافة تقييم جديد</h2>
+                <form action="#" method="POST" class="add-review-form">
+                    <div class="form-group">
+                        <label for="craftsman">اختر الحرفي:</label>
+                        <select name="craftsman" id="craftsman">
+                            <option value="">اختر الحرفي</option>
+                            <option value="craftsman1">حرفي 1</option>
+                            <option value="craftsman2">حرفي 2</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">نوع الخدمة:</label>
+                        <select name="service" id="service">
+                            <option value="">اختر نوع الخدمة</option>
+                            <option value="plumbing">سباكة</option>
+                            <option value="electricity">كهرباء</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rating">التقييم:</label>
+                        <select name="rating" id="rating">
+                            <option value="5">★★★★★</option>
+                            <option value="4">★★★★☆</option>
+                            <option value="3">★★★☆☆</option>
+                            <option value="2">★★☆☆☆</option>
+                            <option value="1">★☆☆☆☆</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="review">ملاحظاتك:</label>
+                        <textarea name="review" id="review" rows="4" placeholder="أدخل ملاحظاتك هنا"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">إرسال التقييم</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 جميع الحقوق محفوظة. تصميم وتطوير بواسطة فريقنا.</p>
+        </div>
+    </footer>
+</body>
+</html>

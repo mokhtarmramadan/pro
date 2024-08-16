@@ -1,0 +1,261 @@
+/* Resetting default styles for consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base font settings */
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    direction: rtl;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+}
+
+/* Container */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #0056b3;
+}
+
+/* تنسيق إضافي لضمان عدم تداخل الهيدر مع المحتوى */
+body {
+    padding-top: 80px;
+}
+
+
+/* Reviews Section */
+.reviews-section {
+    background-color: #fff;
+    padding: 40px 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.reviews-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.filter-section {
+    margin-bottom: 30px;
+}
+
+.filter-form {
+    display: flex;
+    gap: 20px;
+}
+
+.filter-form select,
+.filter-form .filter-btn {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+}
+
+.filter-form .filter-btn {
+    background-color: #0056b3;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-form .filter-btn:hover {
+    background-color: #003d80;
+}
+
+.reviews-list {
+    margin-top: 20px;
+}
+
+.review-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #0056b3;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.rating span:first-child {
+    font-size: 1.2rem;
+    color: #ffdd57;
+    margin-right: 10px;
+}
+
+.rating span:last-child {
+    font-size: 1rem;
+    color: #333;
+}
+
+.add-review {
+    margin-top: 40px;
+}
+
+.add-review h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.add-review-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.add-review-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-review-form label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.add-review-form select,
+.add-review-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+}
+
+.add-review-form textarea {
+    resize: vertical;
+}
+
+.add-review-form .submit-btn {
+    grid-column: span 2;
+    padding: 12px;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-review-form .submit-btn:hover {
+    background-color: #003d80;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #0056b3;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.main-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .filter-form {
+        flex-direction: column;
+    }
+
+    .add-review-form {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .reviews-section,
+    .add-review {
+        padding: 20px 10px;
+    }
+}

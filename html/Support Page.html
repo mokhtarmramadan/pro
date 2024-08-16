@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة الدعم والاستفسارات</title>
+    <link rel="stylesheet" href="../css/Support Page.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container2">
+            <div class="logo">
+                <a href="home.html">شعار الموقع</a>
+            </div>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="Home Page.html">الرئيسية</a></li>
+                    <li><a href="serch.html">البحث عن حرفي</a></li>
+                    <li><a href="Booking Page.html">حجز خدمة</a></li>
+                    <li><a href="Reviews Page.html">التقييمات</a></li>
+                    <li><a href="Support Page.html">الدعم</a></li>
+                    <li><a href="Professional.html">الحساب الشخصي</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="support-section">
+        <div class="container">
+            <h1>الدعم والاستفسارات</h1>
+
+            <section class="faq-section">
+                <h2>الأسئلة الشائعة (FAQ)</h2>
+                <div class="faq-item">
+                    <h3>كيف يمكنني حجز خدمة؟</h3>
+                    <p>يمكنك حجز الخدمة من خلال البحث عن الحرفي المناسب في منطقتك، ثم اختيار الخدمة المرغوبة وحجزها مباشرة.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>ما هي طرق الدفع المتاحة؟</h3>
+                    <p>نوفر طرق دفع متعددة تشمل الدفع النقدي، والدفع عبر بطاقات الائتمان، وخدمات الدفع الإلكتروني.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>كيف يمكنني التواصل مع الدعم الفني؟</h3>
+                    <p>يمكنك التواصل مع فريق الدعم الفني عبر المعلومات المتاحة في قسم التواصل أو من خلال إرسال استفسار عبر النموذج المرفق.</p>
+                </div>
+            </section>
+
+            <section class="inquiry-form-section">
+                <h2>إرسال استفسار أو مشكلة</h2>
+                <form action="../php/Support page.php" method="POST" class="inquiry-form">
+                    <div class="form-group">
+                        <label for="name">الاسم:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">الموضوع:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">الرسالة:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">إرسال</button>
+                </form>
+            </section>
+
+            <section class="contact-info-section">
+                <h2>معلومات التواصل مع الدعم الفني</h2>
+                <p>يمكنك التواصل معنا عبر الوسائل التالية:</p>
+                <ul class="contact-info">
+                    <li><i class="fas fa-phone"></i> الهاتف: 0123456789</li>
+                    <li><i class="fas fa-envelope"></i> البريد الإلكتروني: support@harafi.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> العنوان: شارع التحرير، القاهرة، مصر</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 جميع الحقوق محفوظة. تصميم وتطوير بواسطة فريقنا.</p>
+        </div>
+    </footer>
+</body>
+</html>

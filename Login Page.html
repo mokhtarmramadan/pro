@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - حرفي</title>
+    <link rel="stylesheet" href="./css/Login Page.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card">
+            <h2>تسجيل الدخول</h2>
+            <form action="./php/login.php" method="POST" class="auth-form">
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني</label>
+                    <input type="email" id="email" name="email" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="password">كلمة المرور</label>
+                    <input type="password" id="password" name="password" required class="form-control">
+                </div>
+                <button type="submit" class="btn-primary">دخول</button>
+                <p class="auth-switch">ليس لديك حساب؟ <a href="./html/Sign Up Page.html">سجل الآن</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

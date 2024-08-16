@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حجز الخدمة - حرفي</title>
+    <link rel="stylesheet" href="../css/Booking Page.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="home.html">شعار الموقع</a>
+            </div>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="Home Page.html">الرئيسية</a></li>
+                    <li><a href="serch.html">البحث عن حرفي</a></li>
+                    <li><a href="Booking Page.html">حجز خدمة</a></li>
+                    <li><a href="Reviews Page.html">التقييمات</a></li>
+                    <li><a href="Support Page.html">الدعم</a></li>
+                    <li><a href="Professional.html">الحساب الشخصي</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="booking-section">
+        <div class="container2">
+            <h1>حجز الخدمة</h1>
+            <form action="#" method="POST" class="booking-form">
+                <div class="form-group">
+                    <label for="service-type">نوع الخدمة المطلوبة</label>
+                    <select id="service-type" name="service-type" required>
+                        <option value="">اختر نوع الخدمة</option>
+                        <option value="plumbing">سباكة</option>
+                        <option value="electricity">كهرباء</option>
+                        <option value="carpentry">نجارة</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">التاريخ</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">الوقت</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="payment-method">طريقة الدفع</label>
+                    <select id="payment-method" name="payment-method" required>
+                        <option value="">اختر طريقة الدفع</option>
+                        <option value="credit-card">بطاقة ائتمان</option>
+                        <option value="cash">نقداً عند الاستلام</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">تأكيد الحجز</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <section class="booking-summary">
+        <div class="container2">
+            <h2>ملخص الحجز</h2>
+            <div class="summary-details">
+                <p><strong>الحرفي المختار:</strong> محمد علي - سباكة</p>
+                <p><strong>تاريخ الحجز:</strong> 25 أغسطس 2024</p>
+                <p><strong>الوقت:</strong> 10:00 صباحاً</p>
+                <p><strong>طريقة الدفع:</strong> بطاقة ائتمان</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container2">
+            <p>&copy; 2024 جميع الحقوق محفوظة. تصميم وتطوير بواسطة فريقنا.</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

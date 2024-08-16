@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    direction: rtl; /* لضبط النص من اليمين إلى اليسار */
+    line-height: 1.6;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/* الهيدر */
+/* Header styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 0;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #0056b3;
+}
+
+
+
+.profile-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.profile-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-header h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+}
+
+.logout-btn {
+    color: #fff;
+    background-color: #ff4b5c;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+    background-color: #ff6f7f;
+}
+
+.profile-info, .profile-bookings {
+    margin-bottom: 30px;
+}
+
+.profile-info h3, .profile-bookings h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #555;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 7px;
+    color: #777;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-group input:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+.update-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease-in-out;
+    width: 100%;
+}
+
+.update-btn:hover {
+    background-color: #45a049;
+}
+
+.booking-list {
+    list-style: none;
+}
+
+.booking-item {
+    background-color: #fafafa;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.booking-item:hover {
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 20px;
+    }
+    
+    .profile-header h2 {
+        font-size: 24px;
+    }
+    
+    .logout-btn {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    
+    .form-group input {
+        padding: 10px;
+    }
+    
+    .update-btn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
