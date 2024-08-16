@@ -24,6 +24,16 @@ function controllerRouting(app) {
     UsersController.postNew(req, res);
   });
 
+  router.get('/users', (req, res) => {
+    // Adds a new user
+    UsersController.getMe(req, res);
+  });
+
+  router.put('/users', (req, res) => {
+    // Adds a new user
+    UsersController.getUser(req, res);
+  });
+
   router.post('/res', (req, res) => {
     ResController.reservation(req, res);
   });

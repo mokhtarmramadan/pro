@@ -91,6 +91,19 @@ class UsersController {
     return res.status(200).json({"id":user._id,"email":user.email});
   }
 
+  static async getUser (req, res) {
+    const userId = req.body.userId;
+    const userCollection = await dbClient.db.collection('user');
+    if (!userId) {
+      return res.status(400).json({'error':'Missing userId'});
+    }
+    if (!ObjectId.isValid(userId)) {
+      return res.status(400).json({'error':'Enter a valid userId'});
+    }
+    const user = await userCollection.findOne({'_id': new ObjectId(userId)});
+    return res.status(200).json(user);
+  }
+
 }
 
 export default UsersController;
